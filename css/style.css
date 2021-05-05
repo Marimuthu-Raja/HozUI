@@ -5714,10 +5714,9 @@ a.text-dark:focus {
   width: 32px;
   height: 32px;
   text-align: center;
-  opacity: 0.5;
   color: #fff;
   border-radius: 50%;
-  background: #343a40;
+  background: white;
   line-height: 2.5rem; }
   .card-fav-icon:hover {
     opacity: .7; }
@@ -13592,7 +13591,6 @@ select:focus {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  box-shadow: -5.665px 9.429px 30px 0px rgba(0, 0, 0, 0.2);
   position: absolute;
   top: 50%;
   left: 0; }

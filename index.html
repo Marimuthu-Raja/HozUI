@@ -16,15 +16,23 @@
     <!-- header start -->
     <header class="header">
         <!-- Navbar-->
-        <nav class="navbar navbar-expand-lg fixed-top shadow navbar-light bg-white">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-white">
             <div class="container-fluid">
                 <div class="d-flex align-items-center"><a class="navbar-brand py-1" href="index.html"><img width="153px" height="32px"
                             src="https://www.goschedule.io/wp-content/uploads/2020/05/goschedule_mainlogo.svg"
                             alt="Directory logo"></a>
                     <form action=""  class="form-inline d-none d-sm-flex space-between ml-5">
                         <div>
-                            <label class="label-absolute" for="search_search"><i class="fa fa-map-marker" style="margin-left: 8px;"></i></label>
-                        
+                            <label class="label-absolute" for="search_search">
+                            <svg xmlns="http://www.w3.org/2000/svg"  style="margin-left: 8px;"
+                            width="20" height="20" viewBox="0 0 48 48" 
+                            fill="none">
+                            <rect width="48" height="48" fill="white" fill-opacity="0.01"/>
+                            <path d="M24 44C24 44 39 32 39 19C39 10.7157 32.2843 4 24 4C15.7157 4 9 10.7157 9 19C9 32 24 44 24 44Z"
+                             fill="none" stroke="#94979A" stroke-width="4" stroke-linejoin="round"/>
+                            <path d="M24 25C27.3137 25 30 22.3137 30 19C30 15.6863 27.3137 13 24 13C20.6863 13 18 15.6863 18 19C18 22.3137 20.6863 25 24 25Z" 
+                            fill="none" stroke="#94979A" stroke-width="4" stroke-linejoin="round"/>
+                        </svg></label>
                         <!-- <i class="fa fa-map-marker icon-select color-grey "></i> -->
                         <select class="form-control border-0 shadow-0 bg-gray-200 " style="height: 40px;width: 160px;padding-left: 30px;">
                             <option value="">Bangalore</option> 
@@ -32,9 +40,21 @@
                         </select><i class="fa fa-sort-down" style="position: relative;right: 28px; z-index: 5;"></i>
                     </div>
                     <div>
-                        <label class="label-absolute" for="search_search"><i class="fa fa-search" style="margin-left: 15px;"></i></label>
+                        <label class="label-absolute " for="search_search">
+                            <?xml version="1.0" encoding="UTF-8"?>
+                            <svg width="20" height="20" viewBox="0 0 48 48" style="margin-left: 15px;"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="48" height="48" fill="white" fill-opacity="0.01"/>
+                            <path d="M21 38C30.3888 38 38 30.3888 38 21C38 11.6112 30.3888 4 21 4C11.6112 4 4 11.6112 4 21C4 30.3888 11.6112 38 21 38Z" 
+                            fill="none" stroke="#94979A" stroke-width="4" stroke-linejoin="round"/>
+                            <path d="M26.6568 14.3431C25.2091 12.8954 23.2091 12 21 12C18.7909 12 16.7909 12.8954 15.3431 14.3431" 
+                            stroke="#94979A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M33.2218 33.2218L41.7071 41.7071" 
+                            stroke="#94979A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                            </label>
                         <input class="form-control form-control-sm border-0 shadow-0 bg-gray-200"
-                            style="height: 40px;width: 400px;padding-left: 25px;margin-left: 10px;" id="search_search"
+                            style="height: 40px;width: 400px;padding-left: 30px;margin-left: 10px;" id="search_search"
                         placeholder="Search for Architects, Interior designers,etc.." aria-label="Search">
                     </div>
                     </form>
@@ -72,7 +92,7 @@
                             <li class="breadcrumb-item">India</li>
                             <li class="breadcrumb-item">Bengaluru</li>
                             <li class="breadcrumb-item">Architects</li>
-                            <li class="breadcrumb-item">PVS Architects</li>
+                            <li class="breadcrumb-item"  style="color: rgb(206, 199, 199);">PVS Architects</li>
                         </ol>
                     </nav>
                 </div>
@@ -93,11 +113,11 @@
                         </div>
                         <div class="tab-2">
                             <label for="tab-3">People</label>
-                            <input id="tab-3" name="tabs-two" type="radio">
+                            <input id="tab-3" name="tabs-two" type="radio" onclick="window.location='#People';">
                         </div>
                         <div class="tab-2">
                             <label for="tab-4">Reviews</label>
-                            <input id="tab-4" name="tabs-two" type="radio">
+                            <input id="tab-4" name="tabs-two" type="radio" onclick="window.location='#review';">
                         </div>
                         <div class="tab-2">
                             <label for="tab-5">Liked</label>
@@ -192,13 +212,13 @@
                         </div>
                         <div class="row">
                             <div class="col-lg-6">
-                                <div class="swiper-wrapper pb-5">
-                                    <div class="swiper-slide h-auto px-2">
+                                <div class="swiper-wrapper pb-5 ">
+                                    <div class="swiper-slide h-auto px-2 ">
                                         <!-- place item-->
                                         <div class="w-100 h-100 hover-animate"
                                             data-marker-id="59c0c8e3a31e62979bf147c9">
-                                            <div class="card h-100 border-0 shadow">
-                                                <div class="card-img-top overflow-hidden gradient-overlay"> <img
+                                            <div class="card h-100 border-1">
+                                                <div class="card-img-top overflow-hidden"> <img
                                                         class="img-fluid" src="https://i.stack.imgur.com/y9DpT.jpg"
                                                         alt="Modern Apt - Vibrant Neighborhood!" /><a class="tile-link"
                                                         href="#"></a>
@@ -239,8 +259,8 @@
                                         <!-- place item-->
                                         <div class="w-100 h-100 hover-animate"
                                             data-marker-id="59c0c8e3a31e62979bf147c9">
-                                            <div class="card h-100 border-0 shadow">
-                                                <div class="card-img-top overflow-hidden gradient-overlay"> <img
+                                            <div class="card h-100 border-1">
+                                                <div class="card-img-top overflow-hidden"> <img
                                                         class="img-fluid" src="https://i.stack.imgur.com/y9DpT.jpg"
                                                         alt="Modern Apt - Vibrant Neighborhood!" /><a class="tile-link"
                                                         href="#"></a>
@@ -283,8 +303,8 @@
                                         <!-- place item-->
                                         <div class="w-100 h-100 hover-animate"
                                             data-marker-id="59c0c8e3a31e62979bf147c9">
-                                            <div class="card h-100 border-0 shadow">
-                                                <div class="card-img-top overflow-hidden gradient-overlay"> <img
+                                            <div class="card h-100 border-1">
+                                                <div class="card-img-top overflow-hidden"> <img
                                                         class="img-fluid" src="https://i.stack.imgur.com/y9DpT.jpg"
                                                         alt="Modern Apt - Vibrant Neighborhood!" /><a class="tile-link"
                                                         href="#"></a>
@@ -325,8 +345,8 @@
                                         <!-- place item-->
                                         <div class="hover-animate"
                                             data-marker-id="59c0c8e3a31e62979bf147c9">
-                                            <div class="card border-0 shadow" >
-                                                <div class="card-img-top overflow-hidden gradient-overlay" > <img 
+                                            <div class="card border-1" >
+                                                <div class="card-img-top overflow-hidden" > <img 
                                                         class="img-fluid" src="https://i.stack.imgur.com/y9DpT.jpg"
                                                         alt="Modern Apt - Vibrant Neighborhood!" /><a class="tile-link"
                                                         href="#"></a>
@@ -482,12 +502,12 @@
                 </section>
                 <!-- section people end  -->
                 <section>
-                    <div class="container" style="margin-top: 32px;">
+                    <div class="container" style="margin-top: 32px;" id="review">
                         <div class="col-md-12">
                             <a class="prople-fav-icon" href="">
                                 <?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="48" height="48" fill="white" fill-opacity="0.01"/><path d="M23.9986 5L17.8856 17.4776L4 19.4911L14.0589 29.3251L11.6544 43L23.9986 36.4192L36.3454 43L33.9586 29.3251L44 19.4911L30.1913 17.4776L23.9986 5Z" fill="none" stroke="#000000" stroke-width="4" stroke-linejoin="round"/></svg>
-                                <span>People</span>
                             </a>
+                            <span style="font-weight: bold;color: gray;">PVS Architects Reviews</span>
                             <li class="nav-item nav-item mt-3 mt-lg-0 ml-lg-3 d-lg-none d-xl-inline-block float-right" style="width: 133px; height: 40px;">
                                 <a class="nav-link btn btn-outline-primary" href=""><span>
                                     <?xml version="1.0" encoding="UTF-8"?><svg width="16" height="15" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="48" height="48" fill="white" fill-opacity="0.01"/><path d="M23.9986 5L17.8856 17.4776L4 19.4911L14.0589 29.3251L11.6544 43L23.9986 36.4192L36.3454 43L33.9586 29.3251L44 19.4911L30.1913 17.4776L23.9986 5Z" fill="none" stroke="#4a90e2" stroke-width="4" stroke-linejoin="round"/></svg>

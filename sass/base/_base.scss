@@ -7050,10 +7050,10 @@ a.text-dark {
 	width:32px;
 	height: 32px;
 	text-align: center;
-	opacity: 0.5;
+	// opacity: 0.5;
 	color: $color-white;
 	border-radius: 50%;
-	background: #343a40;
+	background: white;
 	line-height: 2.5rem;
 	&:hover {
 		opacity: .7;
